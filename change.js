@@ -3,7 +3,7 @@ const router = express.Router();
 router.post('/', function(req, res){
     //Check if all fields are provided and are valid:
     if(!req.body.json){ 
-       res.status(400);
+       res.status(450);
        res.json({message: "Bad Request"});
     } else {
        var names = req.body.json.names;
